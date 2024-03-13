@@ -1,0 +1,27 @@
+.LogInCont {
+  background-color: aquamarine;
+  height: 100vh;
+  padding-left: 2em;
+  padding-top: 2rem;
+}
+.input-label {
+  margin-bottom: 0px;
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 16px;
+  color: #475569;
+}
+.login-button {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  height: 30px;
+  width: 90px;
+  margin-top: 9px;
+  margin-bottom: 2px;
+  background-color: #0b69ff;
+  border-radius: 8px;
+  border: none;
+}
