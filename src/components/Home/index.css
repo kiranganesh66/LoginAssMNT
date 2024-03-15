@@ -9,3 +9,15 @@
   padding-top: 10px;
   background-repeat: no-repeat;
 }
+
+.pageNote {
+  font-size: 20px;
+  color: whitesmoke;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.spak {
+  color: greenyellow;
+  font-weight: 600;
+}

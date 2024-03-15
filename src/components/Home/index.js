@@ -16,11 +16,12 @@ const Home = (props) => {
     <div>
       <Header />
       <div className="homeCOn">
-        <p>
-          Please login with Credentials which I have mentioned in the Log in
-          page
+        <p className="pageNote">
+          Please login with credentials, which we shared in the Login page
         </p>
-        <p>Please Click on Login above</p>
+        <p className="pageNote">
+          Please <span className="spak">Click on Login</span> above Header
+        </p>
         <ul>
           {list.map((eachone) => (
             <JokeList joke={eachone} />
