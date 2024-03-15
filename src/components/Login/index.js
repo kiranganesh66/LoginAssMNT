@@ -1,6 +1,5 @@
 import { Component } from "react";
 import Home from "../Home";
-// import { useNavigate } from "react-router-dom";
 
 import "./index.css";
 
@@ -27,18 +26,9 @@ class Login extends Component {
     const { username, password } = this.state;
     const { username1, password1 } = loginDetail[0];
 
-    // const hello = loginDetail.map((eachone) => {
-    //   if (eachone.username.toLowerCase() !== toLowerCase(username)) {
-    //     alert("User Not Found");
-    //   } else if ((eachone.password.toLowerCase() !== password.toLowerCase()) {
-    //     alert("Pass Not Found");
-    //   }
-    // });
-    // // console.log(hello);
-
     if (username1.toLowerCase() !== username.toLowerCase()) {
       alert("User's not Exit");
-    } else if (password1.toLowerCase() !== password.toLowerCase()) {
+    } else if (password1 !== password) {
       alert("User's passWrd Wrong");
     } else {
       this.setState({ active: true });
@@ -61,14 +51,7 @@ class Login extends Component {
     }
 
     this.setState({ listofJokes: listofJoke });
-    // jokes.map((eachjoke) => list.push(eachjoke.joke));
   };
-
-  // this.setState((prevState) => ({
-  //   listOfjokes: prevState.listOfjokes,
-  //   eachjoke,
-  // })
-  // this.setState({ listOfjokes: eachjoke.joke }
 
   loginPage = () => {
     const { username, password } = this.state;
@@ -94,7 +77,7 @@ class Login extends Component {
           <input
             id="userpss"
             value={password}
-            type="text"
+            type="password"
             onChange={this.userPssInput}
           />
           <br />
@@ -102,16 +85,15 @@ class Login extends Component {
             Log In
           </button>
         </form>
+        <h3>Use Below Credentials</h3>
+        <p>Username : kiran66</p>
+        <p>Password : Kiran@6</p>
       </div>
     );
   };
 
   render() {
     const { active, listofJokes } = this.state;
-
-    // for (let i in listofJokes) {
-    //   console.log(listofJokes[i]);
-    // }
 
     return (
       <>{active ? <Home listofJokes={listofJokes} /> : this.loginPage()}</>

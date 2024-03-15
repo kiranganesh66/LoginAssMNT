@@ -1,6 +1,5 @@
 import Header from "../Header";
 import JokeList from "../JokeList";
-// import Login from "../Login";
 
 import "./index.css";
 
@@ -17,6 +16,11 @@ const Home = (props) => {
     <div>
       <Header />
       <div className="homeCOn">
+        <p>
+          Please login with Credentials which I have mentioned in the Log in
+          page
+        </p>
+        <p>Please Click on Login above</p>
         <ul>
           {list.map((eachone) => (
             <JokeList joke={eachone} />
