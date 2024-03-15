@@ -10,7 +10,7 @@ function App() {
       <Routes>
         <Route exact path="/login" element={<Login />} />
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/Notfound" element={<NotFound />} />
+        <Route path="/Notfound" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );

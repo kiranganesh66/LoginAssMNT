@@ -1,0 +1,11 @@
+.home_ing {
+  width: 95rem;
+}
+
+.homeCOn {
+  background-image: url("https://img.freepik.com/free-photo/digital-lavender-natural-landscape_23-2150538392.jpg?t=st=1710406577~exp=1710410177~hmac=bbca166e19eebff83c03eb92bbdc4166bec54d6de8622c2ee5cacbbb437240bb&w=1060");
+  background-size: cover;
+  height: 100vh;
+  padding-top: 10px;
+  background-repeat: no-repeat;
+}
