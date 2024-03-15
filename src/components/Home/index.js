@@ -4,7 +4,7 @@ import JokeList from "../JokeList";
 import "./index.css";
 
 const Home = (props) => {
-  const { listofJokes } = props;
+  const { listofJokes, active } = props;
   const list = [];
   const jk = () => {
     for (let i in listofJokes) {
@@ -16,17 +16,22 @@ const Home = (props) => {
     <div>
       <Header />
       <div className="homeCOn">
-        <p className="pageNote">
-          Please login with credentials, which we shared in the Login page
-        </p>
-        <p className="pageNote">
-          Please <span className="spak">Click on Login</span> above Header
-        </p>
-        <ul>
-          {list.map((eachone) => (
-            <JokeList joke={eachone} />
-          ))}
-        </ul>
+        {active ? (
+          <ul>
+            {list.map((eachone) => (
+              <JokeList joke={eachone} />
+            ))}
+          </ul>
+        ) : (
+          <>
+            <p className="pageNote">
+              Please login with credentials, which we shared in the Login page
+            </p>
+            <p className="pageNote">
+              Please <span className="spak">Click on Login</span> above Header
+            </p>
+          </>
+        )}
       </div>
     </div>
   );

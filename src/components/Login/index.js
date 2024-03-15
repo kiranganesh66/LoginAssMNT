@@ -96,7 +96,13 @@ class Login extends Component {
     const { active, listofJokes } = this.state;
 
     return (
-      <>{active ? <Home listofJokes={listofJokes} /> : this.loginPage()}</>
+      <>
+        {active ? (
+          <Home active={active} listofJokes={listofJokes} />
+        ) : (
+          this.loginPage()
+        )}
+      </>
     );
   }
 }
